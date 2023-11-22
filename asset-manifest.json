@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/good-soup/static/css/main.e08f088e.css",
+    "main.js": "/good-soup/static/js/main.90210f24.js",
+    "index.html": "/good-soup/index.html",
+    "main.e08f088e.css.map": "/good-soup/static/css/main.e08f088e.css.map",
+    "main.90210f24.js.map": "/good-soup/static/js/main.90210f24.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e08f088e.css",
+    "static/js/main.90210f24.js"
+  ]
+}
