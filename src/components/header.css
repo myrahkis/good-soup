@@ -1,0 +1,67 @@
+.header {
+  align-self: stretch;
+}
+
+.header h1 {
+  color: #c25e67;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 5.2rem;
+  font-weight: 300;
+  letter-spacing: 3px;
+  position: relative;
+  width: 100%;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.header h1::before,
+.header h1::after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: calc(15% - 1px);
+  background-color: #c25e67;
+  position: absolute;
+  top: calc(50% - 1px);
+}
+
+.header h1::before {
+  left: 5rem;
+}
+
+.header h1::after {
+  right: 5rem;
+}
+
+/* Large: 992-1199px */
+@media (max-width: 1199px) {
+  .header h1::before,
+  .header h1::after {
+    width: calc(15% - 1px);
+  }
+
+  .header h1::before {
+    left: 1rem;
+  }
+  
+  .header h1::after {
+    right: 1rem;
+  }
+}
+
+/* Medium: 768-991px */
+@media (max-width: 991px) {
+  .header h1::before,
+  .header h1::after {
+    width: calc(9% - 1px);
+  }
+
+  .header h1::before {
+    left: 1rem;
+  }
+  
+  .header h1::after {
+    right: 1rem;
+  }
+}
