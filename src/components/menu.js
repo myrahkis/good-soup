@@ -41,15 +41,24 @@ const data = [
   },
 ];
 
+// const test = [];
+
 function Menu() {
+  const soups = data;
+  const notEmpty = soups.length > 0;
+  
   return (
     <div className="menu">
       <h2>Our best soups</h2>
-      <ul className="soups">
-        {data.map((soup) => (
-          <Soup soup={soup} key={soup.name} className="soup" />
-        ))}
-      </ul>
+      {notEmpty ? (
+        <ul className="soups">
+          {soups.map((soup) => (
+            <Soup soup={soup} key={soup.name} className="soup" />
+          ))}
+        </ul>
+      ) : (
+        <p>Sorry, our menu is still in development...</p>
+      )}
     </div>
   );
 }

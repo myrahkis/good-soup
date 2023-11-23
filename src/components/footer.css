@@ -7,21 +7,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.4rem;
+  gap: 1rem;
 }
 
 .btn {
-  color: inherit;
   font-family: inherit;
   border: none;
+  border-radius: 4px;
   font-size: 1.4rem;
-  font-weight: 500;
+  font-weight: 400;
   background-color: #c25e67;
-  padding: 1.4rem 3.2rem;
+  padding: 1rem 2rem;
   cursor: pointer;
   transition: all 0.2s;
 }
 
 .btn:hover {
-  background-color: #c25e67;
+  background-color: #e58b8e;
 }

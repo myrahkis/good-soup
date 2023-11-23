@@ -32,13 +32,19 @@
 .soup {
   display: flex;
   gap: 1rem;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .soup img {
   width: 12rem;
-  aspect-ratio: 1;
+  /* aspect-ratio: 1; */
   align-self: start;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .soup div {
@@ -57,20 +63,19 @@
   font-size: 1.4rem;
   font-weight: 300;
   font-style: italic;
-  margin-bottom: auto;
-  max-width: 220px;
-  min-width: 220px;
+  /* margin-bottom: auto; */
+  max-width: 390px;
+  min-width: 390px;
   text-align: justify;
 }
 
 .soup span {
   display: block;
   font-size: 1.6rem;
-  margin-left: 15px;
 }
 
 .soup.sold-out {
-  color: #888;
+  color: #acacac;
 }
 
 .soup.sold-out img {
@@ -124,5 +129,8 @@
   }
   .soup p {
     max-width: 261px;
+  }
+  .soup img {
+    visibility:collapse;
   }
 }
